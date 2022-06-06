@@ -12,16 +12,38 @@ def move():
     pass
 
 
-def jump():
-    move()
-    turn_left()
-    move()
-    turn_right()
-    move()
-    turn_right()
-    move()
-    turn_left()
+##################
+# def jump():
+# turn_left()
+# move()
+# turn_right()
+# move()
+# turn_right()
+# move()
+# turn_left()
+##################
 
+
+def wall_on_right():
+    pass
+
+
+def front_is_clear():
+    pass
+
+
+def jump():
+    turn_left()
+    while wall_on_right():
+        move()
+    turn_right()
+    move()
+    turn_right()
+
+    while front_is_clear():
+        move()
+
+    turn_left()
 
 ###################################
 # # jump()
@@ -55,7 +77,3 @@ while not at_goal():
         jump()
     else:
         move()
-
-
-
-
