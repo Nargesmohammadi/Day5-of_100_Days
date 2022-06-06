@@ -23,17 +23,27 @@ def jump():
     turn_left()
 
 
+###################################
+# # jump()
+# # jump()
+# # jump()
+# # jump()
+# # jump()
+# # jump()
+# for step in range(6):
 # jump()
-# jump()
-# jump()
-# jump()
-# jump()
-# jump()
-for step in range(6):
-    jump()
 
-number_of_hurdles = 6
-while number_of_hurdles > 0:
+# number_of_hurdles = 6
+# while number_of_hurdles > 0:
+# jump()
+# number_of_hurdles -= 1
+# print(number_of_hurdles)
+####################################
+
+
+def at_goal():
+    pass
+
+
+while not at_goal():
     jump()
-number_of_hurdles -= 1
-print(number_of_hurdles)
