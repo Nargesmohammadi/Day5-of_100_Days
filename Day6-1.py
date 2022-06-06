@@ -45,5 +45,17 @@ def at_goal():
     pass
 
 
+# jump()
+def wall_in_front():
+    pass
+
+
 while not at_goal():
-    jump()
+    if wall_in_front():
+        jump()
+    else:
+        move()
+
+
+
+
