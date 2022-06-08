@@ -1,4 +1,5 @@
 import random
+
 # step1
 word_list = ["evolution", "canada", "farmer", "advance"]
 the_word = random.choice(word_list)
@@ -13,12 +14,17 @@ for _ in range(the_blank):
     display += "_"
 print(display)
 
-the_guess = input("please enter your guess's letter:").lower()
-# for letter in the_word:
-for position in range(the_blank):
-    letter = the_word[position]
-    if letter == the_guess:
-        display[position] = letter
-        print(display)
+end_of_game = False
 
+while not end_of_game:
+    the_guess = input("please enter your guess's letter:").lower()
+    # for letter in the_word:
+    for position in range(the_blank):
+        letter = the_word[position]
+        if letter == the_guess:
+            display[position] = letter
+print(display)
 
+if "_" not in display:
+    end_of_game = True
+    print("You win")
