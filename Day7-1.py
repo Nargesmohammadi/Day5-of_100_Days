@@ -14,7 +14,6 @@ lives = 8
 
 from hanngman_art import logo, stages
 
-print(logo)
 
 # testing code
 print(f"Past, the solution is {the_word}")
