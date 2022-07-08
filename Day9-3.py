@@ -35,3 +35,7 @@ travel_log2 = [
 
 print(travel_log0["France"])
 print(travel_log1["France"])
+print(travel_log2[0])
+print(capitals)
+
+
