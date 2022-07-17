@@ -23,16 +23,17 @@ operation = {
 
 
 def calculate():
-    num1 = int(input("What's the first number?: "))
+    num1 = float(input("What's the first number?: "))
     for symbol in operation:
         print(symbol)
     should_continue = True
 
     while should_continue:
         operation_symbol = input("Pick an operation from the line above: ")
-        num2 = int(input("What's the second number?: "))
+        num2 = float(input("What's the second number?: "))
         calculation_function = operation[operation_symbol]
         answer = calculation_function(num1, num2)
+        print(answer)
 
         print(f"{num1} {operation_symbol} {num2} = {answer}")
 
@@ -44,11 +45,17 @@ def calculate():
         # print(f"{first_answer} {operation_symbol} {num3} = {second_answer}")
 
         # if input(f"Type 'y' to continue calculating with {answer}, or type 'no' to exit.: ") == "y":
+
         # num1 = answer
         # else:
         # should_continue = False
         if input(f"Type 'y' to continue calculating with {answer}, or type 'no' to start a new calculation: ") == "y":
             num1 = answer
+
         else:
             should_continue = False
             calculate()
+
+
+calculate()
+
